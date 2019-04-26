@@ -6,6 +6,7 @@
     "start": "ng serve",
     "prettier:all": "prettier --write **/*.*",
     "build": "ng build",
+    "build:elements": "ng build --prod && node build-elements.js",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
