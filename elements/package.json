@@ -1,0 +1,22 @@
+{
+  "name": "@nadall/ui-catalog",
+  "version": "1.0.2",
+  "description": "Nadall ui catalog",
+  "main": "elements.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristianqr/ui-catalog.git"
+  },
+  "keywords": [
+    "ui-catalog"
+  ],
+  "author": "Cristian Quispe Ramirez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cristianqr/ui-catalog/issues"
+  },
+  "homepage": "https://github.com/cristianqr/ui-catalog#readme"
+}
