@@ -1,6 +1,6 @@
 {
   "name": "@nadall/ui-catalog",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Nadall ui catalog",
   "main": "elements.js",
   "scripts": {
