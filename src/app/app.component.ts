@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
     templateUrl: './app.component.html',
 })
 export class AppComponent {
-    title = 'ui-catalog';
+    todoList = [{ score: 1, name: 'Angular' }, { score: 21, name: 'Angular' }, { score: 10, name: 'Vue' }];
 }

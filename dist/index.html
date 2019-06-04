@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script src="elements.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <ndl-panel header="Customers">
+            <button id="btnLoadTodoList">Load Todo List</button> <br /><br />
+
+            <ndl-todo-list id="todoList"></ndl-todo-list>
+        </ndl-panel>
+        <script>
+            const btnLoadTodoList = document.getElementById('btnLoadTodoList');
+            const todoListEl = document.getElementById('todoList');
+            const btnSendDataEl = document.getElementById('btnSendData');
+
+            const items = [{ score: 1, name: 'Angular' }, { score: 21, name: 'React' }, { score: 10, name: 'Vue' }];
+            btnLoadTodoList.addEventListener('click', function() {
+                todoListEl.items = items;
+            });
+
+            todoListEl.addEventListener('voteDown', function(data) {
+                todoListEl.items = items.map(item => {
+                    if (item.name === data.detail.name) {
+                        return { ...item, score: item.score-- };
+                    } else {
+                        return item;
+                    }
+                });
+            });
+
+            todoListEl.addEventListener('voteUp', function(data) {
+                todoListEl.items = items.map(item => {
+                    if (item.name === data.detail.name) {
+                        return { ...item, score: item.score++ };
+                    } else {
+                        return item;
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

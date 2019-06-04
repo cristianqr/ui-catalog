@@ -1,0 +1,26 @@
+<table border="1">
+    <thead>
+        <tr>
+            <th>Nro.</th>
+            <th>Score</th>
+            <th>Name</th>
+            <th class="actions">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <ng-container *ngFor="let item of items; let i = index">
+            <tr>
+                <td>{{ i + 1 }}</td>
+                <td>{{ item.score }}</td>
+                <td>{{ item.name }}</td>
+                <td class="actions">
+                    <button (click)="voteUp.emit(item)"><i class="fa fa-chevron-up"></i> Up</button>&nbsp;<button
+                        (click)="voteDown.emit(item)"
+                    >
+                        <i class="fa fa-chevron-down"></i> Down
+                    </button>
+                </td>
+            </tr>
+        </ng-container>
+    </tbody>
+</table>

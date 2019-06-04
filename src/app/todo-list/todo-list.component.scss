@@ -1,0 +1,21 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead {
+        background-color: #090;
+    }
+
+    .actions {
+        width: 10px;
+        white-space: nowrap;
+
+        button {
+            background-color: #090;
+            border: none;
+        }
+    }
+    td {
+        padding: 5px;
+    }
+}
