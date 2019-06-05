@@ -10,7 +10,7 @@ import { TodoListComponent } from './todo-list/todo-list.component';
     declarations: [AppComponent, PanelComponent, TodoListComponent],
     imports: [BrowserModule],
     providers: [],
-    // bootstrap: [AppComponent],
+    bootstrap: [],
     entryComponents: [PanelComponent, TodoListComponent],
 })
 export class AppModule {
