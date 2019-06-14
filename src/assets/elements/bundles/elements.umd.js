@@ -1,5 +1,5 @@
 /**
- * @license Angular v7.2.14
+ * @license Angular v8.0.0
  * (c) 2010-2019 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -69,9 +69,12 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://angular.io/license
      */
-    var elProto = Element.prototype;
-    var matches = elProto.matches || elProto.matchesSelector || elProto.mozMatchesSelector ||
-        elProto.msMatchesSelector || elProto.oMatchesSelector || elProto.webkitMatchesSelector;
+    var ɵ0 = function () {
+        var elProto = Element.prototype;
+        return elProto.matches || elProto.matchesSelector || elProto.mozMatchesSelector ||
+            elProto.msMatchesSelector || elProto.oMatchesSelector || elProto.webkitMatchesSelector;
+    };
+    var matches = (ɵ0)();
     /**
      * Provide methods for scheduling the execution of a callback.
      */
@@ -537,7 +540,7 @@
     /**
      * @publicApi
      */
-    var VERSION = new core.Version('7.2.14');
+    var VERSION = new core.Version('8.0.0');
 
     /**
      * @license

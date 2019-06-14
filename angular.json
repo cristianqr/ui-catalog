@@ -15,7 +15,7 @@
             },
             "architect": {
                 "build": {
-                    "builder": "ngx-build-plus:build",
+                    "builder": "ngx-build-plus:browser",
                     "options": {
                         "outputPath": "dist/ui-catalog",
                         "index": "src/index.html",
@@ -26,7 +26,7 @@
                         "styles": ["src/styles.scss"],
                         "scripts": [
                             {
-                                "input": "node_modules/document-register-element/build/document-register-element.js"
+                                "input": "node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js"
                             }
                         ],
                         "es5BrowserSupport": true
