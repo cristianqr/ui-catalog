@@ -2,7 +2,11 @@ const fs = require('fs-extra');
 const nodeMinify = require('node-minify');
 const concat = require('concat');
 (async function build() {
-    const polyfillsPackages = ['./dist/ui-catalog/scripts.js'];
+    const polyfillsPackages = [
+        './dist/ui-catalog/assets/webcomponentsjs/webcomponents-loader.js',
+        './dist/ui-catalog/assets/core-js/core.js',
+        './dist/ui-catalog/assets/webcomponentsjs/custom-elements-es5-adapter.js',
+    ];
     const angularPackages = [
         './dist/ui-catalog/assets/rxjs/rxjs.umd.js',
         './dist/ui-catalog/assets/core/bundles/core.umd.js',
